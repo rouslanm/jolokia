@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <restrict>
+    <!--
+        Access is granted to the 'read', 'list', 'search' and 'version' commands,
+        but not to 'write' and 'exec' operations.
+     -->
     <commands>
         <command>read</command>
         <command>list</command>
