@@ -11,4 +11,15 @@
         <command>version</command>
         <command>search</command>
     </commands>
+
+    <!--
+        Allowing only 'exec' of 'getThreadCpuTime' operation in
+        Threading MBean object.
+    -->
+    <allow>
+        <mbean>
+            <name>java.lang:type=Threading</name>
+            <operation mode="exec">getThreadCpuTime*</operation>
+        </mbean>
+    </allow>
 </restrict>
